@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eASY CART</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/cartStyle.css"> -->
+</head>
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+        <p class="logo"> <i class="fas fa-bag-shopping"></i>eASY CART</div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#product">Product</a>
+            <a href="#featured">Featured</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-shopping-cart cart-count" onclick="toggleCart()"></div>
+            <a href="signin.html"><div class="fa-solid fa-user-plus"></div></a>
+            <div id="menu-bar" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- header end -->
+    <!-- home -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>shopping as <br> you love</h3>
+            <p>Elevate Your Style: Where Fashion Meets Convenience!.</p>
+            <a href="#product" class="btn">see what's on sale</a>
+        </div>
+
+    </section>
+
+    <!-- home end -->
+
+    <!-- banner -->
+
+    <section class="banner">
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/banner1.jpg" alt="">
+                <div class="content">
+                    <h3>versatile style</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/banner2.jpg" alt="">
+                <div class="content">
+                    <h3>T-shirt & bags</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/banner3.jpg" alt="">
+                <div class="content">
+                    <h3>fall/winter 2023/24</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- bannner end -->
+
+    <!-- product -->
+
+    <section class="products" id="product">
+
+        <h1 class="heading">our <span>products</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product1.jpg" alt="">
+                    <img src="images/product1b.jpg" alt="" class="rear-img">
+                </div>
+                <div class="content">
+                    <h3 class="productName">T-Shirts</h3>
+                    <div class="price">₹999</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="fas fa-shopping-cart add-to-cart-btn" onclick="addToCart('T-Shirt', 999)"></button>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product2.jpg" alt="">
+                    <img src="images/product2b.jpg" alt="" class="rear-img">
+                </div>
+                <div class="content">
+                    <h3>Cargo</h3>
+                    <div class="price">₹2999</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="fas fa-shopping-cart add-to-cart-btn" onclick="addToCart('Cargo', 2999)"></button>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product3.jpg" alt="">
+                    <img src="images/product3b.jpg" alt="" class="rear-img">
+                </div>
+                <div class="content">
+                    <h3>Denim Jacket</h3>
+                    <div class="price">₹3999</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="fas fa-shopping-cart add-to-cart-btn" onclick="addToCart('Denim Jacket', 3999)"></button>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product4.jpg" alt="">
+                    <img src="images/product4b.jpg" alt="" class="rear-img">
+                </div>
+                <div class="content">
+                    <h3>Hoodie</h3>
+                    <div class="price">₹1599</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="fas fa-shopping-cart add-to-cart-btn" onclick="addToCart('Hoodie', 1599)"></button>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product5.jpg" alt="">
+                    <img src="images/product5b.jpg" alt="" class="rear-img">
+                </div>
+                <div class="content">
+                    <h3>Leather Jacket</h3>
+                    <div class="price">6999</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="fas fa-shopping-cart add-to-cart-btn"onclick="addToCart('Leather Jacket', 6999)"></button>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product6.jpeg" alt="">
+                    <img src="images/product6b.jpg" alt="" class="rear-img">
+                </div>
+                <div class="content">
+                    <h3>Varsity</h3>
+                    <div class="price">₹3999</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="fas fa-shopping-cart add-to-cart-btn" onclick="addToCart('varsity', 3999)"></button>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- product end -->
+
+    <!-- deliver -->
+
+    <section class="deliver">
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/deliver_1.png" alt="" class="front-img">
+                    <img src="images/deliver_12.png" alt="" class="rear-img">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/deliver_2.png" alt="" class="front-img">
+                    <img src="images/deliver_22.png" alt="" class="rear-img">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/deliver_3.png" alt="" class="front-img">
+                    <img src="images/deliver_32.png" alt="" class="rear-img">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <h3>feel free to ask</h3>
+                    <h2>+91 978 456 4506</h2>
+                    <p> eASY CART<br> Elevate Your Style: Where Fashion Meets Convenience!.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- deliver -->
+
+
+    <!-- featured -->
+
+    
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>featured</span> products </h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/feature1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Analog Watches</h3>
+                        <div class="price">
+                            <div class="amount">₹5000.00</div>
+                            <div class="cut">₹20000.00</div>
+                            <div class="off">20% off</div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/feature2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Jeans</h3>
+                        <div class="price">
+                            <div class="amount">₹1500</div>
+                            <div class="cut">₹3000</div>
+                            <div class="off">50% off</div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/feature3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Watches</h3>
+                        <div class="price">
+                            <div class="amount">₹5000</div>
+                            <div class="cut">₹20000</div>
+                            <div class="off">20% off</div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/feature4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shoes</h3>
+                        <div class="price">
+                            <div class="amount">₹7000</div>
+                            <div class="cut">₹14000</div>
+                            <div class="off">50% off</div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/feature5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Ray Ban</h3>
+                        <div class="price">
+                            <div class="amount">₹9000</div>
+                            <div class="cut">₹10000</div>
+                            <div class="off">10% off</div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="images/feature6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Aldo</h3>
+                        <div class="price">
+                            <div class="amount">₹5000</div>
+                            <div class="cut">₹10000</div>
+                            <div class="off">50% off</div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section> 
+
+
+    <!-- end -->
+
+    <!-- brand -->
+
+    <section class="brand">
+
+        <div class="swiper brand-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/brand_1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/brand_2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/brand_3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/brand_4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/brand_5.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- blog -->
+
+    <section class="blogs" id="blog">
+
+        <h1 class="heading">our <span>blogs</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog1.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-heart"></i> 56</a>
+                        <a href="#"><i class="fas fa-comment"></i> 99 </a>
+                    </div>
+                    <h3>Fashion Flashback: Nostalgic Styles Making a Comeback</h3>
+                    <p>Take a trip down memory lane as we revisit iconic fashion trends making a stylish comeback in the modern era.</p>
+                    <a href="blog.html" class="btn">read more</a>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-calendar"></i> 12th November, 2022</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-heart"></i> 56</a>
+                        <a href="#"><i class="fas fa-comment"></i> 99 </a>
+                    </div>
+                    <h3>Wardrobe Essentials: Building a Timeless Closet</h3>
+                    <p>Learn how to curate a versatile and timeless wardrobe with key pieces that never go out of style.</p>
+                    <a href="blog.html" class="btn">read more</a>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-calendar"></i> 1st october, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-heart"></i> 56</a>
+                        <a href="#"><i class="fas fa-comment"></i> 99 </a>
+                    </div>
+                    <h3>The Iconic Silhouttes of Yesteryear</h3>
+                    <p>Unleash your inner fashionista with insider tips on mastering the art of mixing and matching your wardrobe essentials.</p>
+                    <a href="blog.html" class="btn">read more</a>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-calendar"></i> 9th December, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- Shopping cart-->
+
+    <section id="cart-container" class="cart">
+        <h2 style="font-size: 40px;" class="heading">YOUR <span style="color: #a4916d;">SHOPPING</span> CART</h2>
+        <ul id="cart-items" class="cart-container" style="font-size: 17px;"></ul>
+        <div id="total" class="cart-summary" style="font-size: 20px;">Total: ₹0.00</div>
+        <button id="rzp-button" class="razorpay">Pay Now</button>
+    </section>
+    <script type="text/template" id="cart-item-template">
+        <div class="cart-item" style="font-size: 17px;">
+            <div class="item-info" style="font-size: 17px;">
+                <span class="item-name" style="font-size: 17px;"></span>
+                <span class="item-price" style="font-size: 17px;"></span>
+            </div>
+        </div>
+    </script>
+
+    <!-- end -->
+
+    
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact.gif" alt="">
+            </div>
+
+            <form action="">
+
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Your name">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="Your email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Subject">
+                </div>
+
+                <textarea placeholder="Your Message" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Send Message" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+   
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3><i class="fas fa-bag-shopping"></i> eASY CART</h3>
+                <p>Elevate Your Style: Where Fashion Meets Convenience!</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> product</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> feature</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> blog</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> help center</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> ask questions</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> send feedback</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> privacy policy</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> help center</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> ask questions</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> send feedback</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> privacy policy</a>
+                <a href="#" class="link"><i class="fas fa-arrow-right"></i> terms of use</a>
+            </div>
+
+        </div>
+
+        <div class="credit">copyright &copy; 2022 by <span>eASY CART</span> | All rights reserved </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script>
+        let cart = [];
+        let total = 0;
+
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            total += price;
+            updateCart();
+            updateTotalForPaymentGateway();
+        }
+        function updateTotalForPaymentGateway() {
+            const rzpButton = document.getElementById('rzp-button');
+            
+            // Update the total in paise
+            const totalInPaise = Math.ceil(parseFloat(total) * 100);
+            console.log("Total in paise:", totalInPaise);
+
+            // Update the total amount in the payment gateway options
+            options.amount = totalInPaise;
+
+            // You may need to recreate the Razorpay instance with updated options
+            const rzpInstance = new Razorpay(options);
+            
+            // Update the click event listener
+            rzpButton.addEventListener('click', function () {
+                rzpInstance.open();
+            });
+        }
+        const rzpKey = 'enter_your_razorpay_key';
+        
+        const options = {
+            key: rzpKey,
+            amount: Math.ceil(total * 100), 
+            currency: 'INR',
+            name: 'eASY',
+            description: 'Payment for your order',
+            handler: function (response) {
+                alert('Payment successful!'); 
+            },
+            prefill: {
+                name: 'Customer Name',
+                email: 'customer@example.com',
+                contact: '1234567890',
+            },
+            notes: {
+                address: 'Your Store Address',
+            },
+            theme: {
+                color: '#a4916d', 
+            },
+        };
+    
+        const rzpButton = document.getElementById('rzp-button');
+        rzpButton.addEventListener('click', function () {
+            const rzpInstance = new Razorpay(options);
+            rzpInstance.open();
+        });
+
+
+        function updateCart() {
+            const cartList = document.getElementById('cart-items');
+            const totalElement = document.getElementById('total');
+
+            // Clear the cart list
+            cartList.innerHTML = '';
+
+            // Populate the cart list
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+                cartList.appendChild(li);
+            });
+
+            // Update the total
+            totalElement.textContent = `Total: ₹${total.toFixed(2)}`;
+
+            // Display the cart container
+            const cartContainer = document.getElementById('cart-container');
+            cartContainer.style.display = 'block';
+
+            // Update the cart count in the header
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = `(${cart.length})`;
+        }
+
+        function toggleCart() {
+            const cartContainer = document.getElementById('cart-container');
+            cartContainer.style.display = (cartContainer.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+    
+</body>
+</html>
